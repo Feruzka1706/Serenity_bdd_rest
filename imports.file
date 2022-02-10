@@ -1,0 +1,26 @@
+
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.BeforeAll;
+
+import io.restassured.response.ValidatableResponse;
+import io.restassured.specification.RequestSpecification;
+import io.restassured.response.Response;
+
+import static io.restassured.RestAssured.*;
+import static org.junit.jupiter.api.Assertions.*;
+import static org.hamcrest.MatcherAssert.*;
+import static org.hamcrest.Matchers.*;
+import static net.serenitybdd.rest.SerenityRest.*;
+import net.serenitybdd.rest.Ensure;
+
+
+import io.restassured.http.ContentType;
+import net.serenitybdd.junit5.SerenityJUnit5Extension;
+import net.serenitybdd.rest.Ensure;
+import net.serenitybdd.rest.SerenityRest;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import static net.serenitybdd.rest.SerenityRest.lastResponse;
+
+
